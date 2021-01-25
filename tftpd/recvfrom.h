@@ -19,4 +19,5 @@
 
 int
 myrecvfrom(int s, void *buf, int len, unsigned int flags,
-           union sock_addr *from, union sock_addr *myaddr);
+           struct sockaddr *from, socklen_t *fromlen,
+           union sock_addr *myaddr);
