@@ -1005,10 +1005,7 @@ int main(int argc, char **argv)
             exit(EX_OSERR);
         }
 #ifdef __CYGWIN__
-				if (chdir("/") < 0) {			/* Cygwin chroot() bug workaround */
-					syslog(LOG_ERR, "chroot: %m");
-					exit(EX_OSERR);
-				}
+        chdir("/");             /* Cygwin chroot() bug workaround */
 #endif
     }
 #ifdef HAVE_SETREGID
