@@ -1,6 +1,6 @@
 Summary: The client for the Trivial File Transfer Protocol (TFTP).
 Name: tftp
-Version: @@VERSION@@
+Version: 5.2
 Release: 1
 License: BSD
 Group: Applications/Internet

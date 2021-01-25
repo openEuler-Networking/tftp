@@ -188,7 +188,7 @@ char *xstrdup(const char *);
 
 const char *program;
 
-static void usage(int errcode)
+static inline void usage(int errcode)
 {
     fprintf(stderr,
 #ifdef HAVE_IPV6
